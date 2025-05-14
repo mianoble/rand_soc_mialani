@@ -156,3 +156,32 @@ setText("AXI ID Width", "4"); // B
 selectComboBox("Number of Memory Banks (C_NUM_BANKS_MEM)", "2", 1); // E
 selectComboBox("Number of Memory Banks (C_NUM_BANKS_MEM)", "3", 2); // E
 selectComboBox("Number of Memory Banks (C_NUM_BANKS_MEM)", "4", 3); // E
+// Elapsed time: 477 seconds
+selectComboBox("Number of Memory Banks (C_NUM_BANKS_MEM)", "1", 0); // E
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Customize IP"); // r
+// TclEventType: CREATE_IP_CORE
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_ip -name axi_emc -vendor xilinx.com -library ip -version 3.0 -module_name axi_emc_0 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property -dict [list CONFIG.C_NUM_BANKS_MEM {1}] [get_ips axi_emc_0] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files /home/mianoble/Documents/vivado/practice_block_design/practice_block_design.srcs/sources_1/ip/axi_emc_0/axi_emc_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'axi_emc_0'... 
+// aI (cr): Generate Output Products: addNotify
+// [Engine Memory]: 1,800 MB (+54142kb) [00:22:34]
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+dismissDialog("Generate Output Products"); // aI
+// HMemoryUtils.trashcanNow. Engine heap size: 1,765 MB. GUI used memory: 102 MB. Current time: 5/14/25, 11:14:10 AM MDT
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI EMC ; AXI4 ; Production ; Included ; xilinx.com:ip:axi_emc:3.0", 3, "AXI EMC", 0, true); // L - Node
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI EMC ; AXI4 ; Production ; Included ; xilinx.com:ip:axi_emc:3.0", 3, "AXI EMC", 0, true, false, false, false, false, true); // L - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// r (cr): Customize IP: addNotify
+// Elapsed time: 197 seconds
+selectTab(PAResourceEtoH.HACGCTabbedPane_TABBED_PANE, (HResource) null, "Memory Bank 1", 1); // bi
