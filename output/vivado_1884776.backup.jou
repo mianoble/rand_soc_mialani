@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May 13 13:54:44 2025
+# Process ID: 1884776
+# Current directory: /home/mianoble/Downloads/gmt_tools-main/rand_soc/output
+# Command line: vivado -source design.tcl
+# Log file: /home/mianoble/Downloads/gmt_tools-main/rand_soc/output/vivado.log
+# Journal file: /home/mianoble/Downloads/gmt_tools-main/rand_soc/output/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source design.tcl
+update_compile_order -fileset sources_1
+set_property location {2.5 940 963} [get_bd_cells ip_4_xadc_wiz]
+undo

@@ -1,0 +1,5 @@
+chevron
+boolean.py
+lxml
+pyyaml
+-e rand_soc

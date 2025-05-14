@@ -1,0 +1,68 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May 13 17:43:01 2025
+# Process ID: 1918914
+# Current directory: /home/mianoble/Downloads/gmt_tools-main/rand_soc/output
+# Command line: vivado -source design.tcl
+# Log file: /home/mianoble/Downloads/gmt_tools-main/rand_soc/output/vivado.log
+# Journal file: /home/mianoble/Downloads/gmt_tools-main/rand_soc/output/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source design.tcl
+update_compile_order -fileset sources_1
+reset_run synth_1
+reset_run bd_design_reduce_18_0_synth_1
+reset_run bd_design_reduce_19_0_synth_1
+reset_run bd_design_reduce_20_0_synth_1
+reset_run bd_design_reduce_21_0_synth_1
+reset_run bd_design_reduce_22_0_synth_1
+reset_run bd_design_reduce_23_0_synth_1
+reset_run bd_design_reduce_24_0_synth_1
+reset_run bd_design_reduce_2_0_synth_1
+reset_run bd_design_axi_0_0_synth_1
+reset_run bd_design_reduce_16_0_synth_1
+reset_run bd_design_axi_quad_spi_0_0_synth_1
+reset_run bd_design_emc_0_2_synth_1
+reset_run bd_design_axi_cdma_0_2_synth_1
+reset_run bd_design_axi_timer_0_1_synth_1
+reset_run bd_design_reduce_0_0_synth_1
+reset_run bd_design_reduce_1_0_synth_1
+reset_run bd_design_axi_ethernetlite_0_1_synth_1
+reset_run bd_design_reduce_5_0_synth_1
+reset_run bd_design_reduce_4_0_synth_1
+reset_run bd_design_reduce_3_0_synth_1
+reset_run bd_design_reduce_25_0_synth_1
+reset_run bd_design_reduce_26_0_synth_1
+reset_run bd_design_reduce_27_0_synth_1
+reset_run bd_design_reduce_28_0_synth_1
+reset_run bd_design_reduce_29_0_synth_1
+reset_run bd_design_reduce_30_0_synth_1
+reset_run bd_design_reduce_31_0_synth_1
+reset_run bd_design_dft_0_0_synth_1
+reset_run bd_design_xadc_wiz_0_0_synth_1
+reset_run bd_design_accumulator_0_0_synth_1
+reset_run bd_design_axi_cdma_0_0_synth_1
+reset_run bd_design_axi_cdma_0_1_synth_1
+reset_run bd_design_emc_0_0_synth_1
+reset_run bd_design_accumulator_0_1_synth_1
+reset_run bd_design_axi_ethernetlite_0_0_synth_1
+reset_run bd_design_uart_0_0_synth_1
+reset_run bd_design_dft_0_1_synth_1
+reset_run bd_design_reduce_6_0_synth_1
+reset_run bd_design_reduce_7_0_synth_1
+reset_run bd_design_reduce_8_0_synth_1
+reset_run bd_design_intc_0_0_synth_1
+reset_run bd_design_axi_timer_0_0_synth_1
+reset_run bd_design_clk_wiz_0_0_synth_1
+reset_run bd_design_reduce_9_0_synth_1
+reset_run bd_design_reduce_10_0_synth_1
+reset_run bd_design_reduce_11_0_synth_1
+reset_run bd_design_reduce_12_0_synth_1
+reset_run bd_design_reduce_13_0_synth_1
+reset_run bd_design_reduce_14_0_synth_1
+reset_run bd_design_reduce_15_0_synth_1
+reset_run bd_design_axi_hwicap_0_0_synth_1
+reset_run bd_design_emc_0_1_synth_1
+reset_run bd_design_reduce_17_0_synth_1

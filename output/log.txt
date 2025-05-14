@@ -1,0 +1,807 @@
+2025-05-13 17:42:17,951 INFO: ########## Selecting IPs ##########
+2025-05-13 17:42:17,952 INFO: IP 0: AxiTimer
+2025-05-13 17:42:17,952 INFO: IP 1: XadcWiz
+2025-05-13 17:42:17,952 INFO: IP 2: AxiCdma
+2025-05-13 17:42:17,952 INFO: IP 3: AxiCdma
+2025-05-13 17:42:17,952 INFO: IP 4: Accumulator
+2025-05-13 17:42:17,952 INFO: IP 5: Dft
+2025-05-13 17:42:17,952 INFO: IP 6: Emc
+2025-05-13 17:42:17,952 INFO: IP 7: Accumulator
+2025-05-13 17:42:17,952 INFO: IP 8: AxiEthernetLite
+2025-05-13 17:42:17,952 INFO: IP 9: Uartlite
+2025-05-13 17:42:17,952 INFO: IP 10: Dft
+2025-05-13 17:42:17,952 INFO: IP 11: AxiHwicap
+2025-05-13 17:42:17,952 INFO: IP 12: Emc
+2025-05-13 17:42:17,952 INFO: IP 13: AxiCdma
+2025-05-13 17:42:17,952 INFO: IP 14: AxiTimer
+2025-05-13 17:42:17,952 INFO: IP 15: AxiQuadSpi
+2025-05-13 17:42:17,952 INFO: IP 16: Emc
+2025-05-13 17:42:17,952 INFO: IP 17: AxiEthernetLite
+2025-05-13 17:42:17,956 INFO: ip_0_axi_timer randomized to:
+{'axi_timer_0': {'configuration': {'GEN0_ASSERT': {'value': 'Active_Low'},
+                                   'TRIG0_ASSERT': {'value': 'Active_High'},
+                                   'mode_64bit': {'value': 1}},
+                 'definition': 'xilinx.com:ip:axi_timer:2.0',
+                 'ports': {'S_AXI': {'connections': ['axi_timer_0/S_AXI'],
+                                     'direction': 'Slave',
+                                     'protocol': 'xilinx.com:interface:aximm_rtl:1.0'},
+                           'capturetrig0': {'connections': ['axi_timer_0/capturetrig0'],
+                                            'direction': 'I',
+                                            'protocol': 'control',
+                                            'width': 1},
+                           'freeze': {'connections': ['axi_timer_0/freeze'],
+                                      'direction': 'I',
+                                      'protocol': 'control',
+                                      'width': 1},
+                           'generateout0': {'connections': ['axi_timer_0/generateout0'],
+                                            'direction': 'O',
+                                            'protocol': 'data',
+                                            'width': 1},
+                           'generateout1': {'connections': ['axi_timer_0/generateout1'],
+                                            'direction': 'O',
+                                            'protocol': 'data',
+                                            'width': 1},
+                           'interrupt': {'connections': ['axi_timer_0/interrupt'],
+                                         'direction': 'O',
+                                         'protocol': 'irq',
+                                         'width': 1},
+                           'pwm0': {'connections': ['axi_timer_0/pwm0'],
+                                    'direction': 'O',
+                                    'protocol': 'data',
+                                    'width': 1},
+                           's_axi_aclk': {'connections': ['axi_timer_0/s_axi_aclk'],
+                                          'direction': 'I',
+                                          'protocol': 'clk',
+                                          'width': 1},
+                           's_axi_aresetn': {'connections': ['axi_timer_0/s_axi_aresetn'],
+                                             'direction': 'I',
+                                             'protocol': 'reset',
+                                             'width': 1}}}}
+2025-05-13 17:42:17,966 INFO: ip_1_xadc_wiz randomized to:
+{'xadc_wiz_0': {'configuration': {'ADC_OFFSET_AND_GAIN_CALIBRATION': {'value': 0},
+                                  'ADC_OFFSET_CALIBRATION': {'value': 0},
+                                  'CHANNEL_AVERAGING': {'value': 16},
+                                  'ENABLE_CALIBRATION_AVERAGING': {'value': 0},
+                                  'ENABLE_DCLK': {'value': 0},
+                                  'ENABLE_JTAG_ARBITER': {'value': 0},
+                                  'ENABLE_RESET': {'value': 0},
+                                  'ENABLE_VBRAM_ALARM': {'value': 1},
+                                  'INTERFACE_SELECTION': {'value': 'None'},
+                                  'OT_ALARM': {'value': 0},
+                                  'POWER_DOWN_ADCA': {'value': 0},
+                                  'POWER_DOWN_ADCB': {'value': 1},
+                                  'SENSOR_OFFSET_AND_GAIN_CALIBRATION': {'value': 0},
+                                  'SENSOR_OFFSET_CALIBRATION': {'value': 1},
+                                  'TIMING_MODE': {'value': 'Continuous'},
+                                  'USER_TEMP_ALARM': {'value': 1},
+                                  'VCCAUX_ALARM': {'value': 0},
+                                  'VCCINT_ALARM': {'value': 1},
+                                  'XADC_STARUP_SELECTION': {'value': 'channel_sequencer'}},
+                'definition': 'xilinx.com:ip:xadc_wiz:3.3',
+                'ports': {'Vp_Vn': {'connections': ['xadc_wiz_0/Vp_Vn'],
+                                    'direction': 'Slave',
+                                    'protocol': 'xilinx.com:interface:diff_analog_io_rtl:1.0'},
+                          'alarm_out': {'connections': ['xadc_wiz_0/alarm_out'],
+                                        'direction': 'O',
+                                        'protocol': 'control',
+                                        'width': 1},
+                          'busy_out': {'connections': ['xadc_wiz_0/busy_out'],
+                                       'direction': 'O',
+                                       'protocol': 'data',
+                                       'width': 1},
+                          'eoc_out': {'connections': ['xadc_wiz_0/eoc_out'],
+                                      'direction': 'O',
+                                      'protocol': 'data',
+                                      'width': 1},
+                          'eos_out': {'connections': ['xadc_wiz_0/eos_out'],
+                                      'direction': 'O',
+                                      'protocol': 'data',
+                                      'width': 1},
+                          'user_temp_alarm_out': {'connections': ['xadc_wiz_0/user_temp_alarm_out'],
+                                                  'direction': 'O',
+                                                  'protocol': 'control',
+                                                  'width': 1},
+                          'vbram_alarm_out': {'connections': ['xadc_wiz_0/vbram_alarm_out'],
+                                              'direction': 'O',
+                                              'protocol': 'control',
+                                              'width': 1},
+                          'vccint_alarm_out': {'connections': ['xadc_wiz_0/vccint_alarm_out'],
+                                               'direction': 'O',
+                                               'protocol': 'control',
+                                               'width': 1}}}}
+2025-05-13 17:42:17,970 INFO: ip_2_axi_cdma randomized to:
+{'axi_cdma_0': {'configuration': {'C_ADDR_WIDTH': {'value': 43},
+                                  'C_INCLUDE_DRE': {'value': 0},
+                                  'C_INCLUDE_SF': {'value': 0},
+                                  'C_INCLUDE_SG': {'value': 0},
+                                  'C_M_AXI_DATA_WIDTH': {'value': 128},
+                                  'C_M_AXI_MAX_BURST_LEN': {'value': 8},
+                                  'C_USE_DATAMOVER_LITE': {'value': 0}},
+                'definition': 'xilinx.com:ip:axi_cdma:4.1',
+                'ports': {'M_AXI': {'connections': ['axi_cdma_0/M_AXI'],
+                                    'direction': 'Master',
+                                    'protocol': 'xilinx.com:interface:aximm_rtl:1.0'},
+                          'S_AXI_LITE': {'connections': ['axi_cdma_0/S_AXI_LITE'],
+                                         'direction': 'Slave',
+                                         'protocol': 'xilinx.com:interface:aximm_rtl:1.0'},
+                          'cdma_introut': {'connections': ['axi_cdma_0/cdma_introut'],
+                                           'direction': 'O',
+                                           'protocol': 'irq',
+                                           'width': 1},
+                          'm_axi_aclk': {'connections': ['axi_cdma_0/m_axi_aclk'],
+                                         'direction': 'I',
+                                         'protocol': 'clk',
+                                         'width': 1},
+                          's_axi_lite_aclk': {'connections': ['axi_cdma_0/s_axi_lite_aclk'],
+                                              'direction': 'I',
+                                              'protocol': 'clk',
+                                              'width': 1},
+                          's_axi_lite_aresetn': {'connections': ['axi_cdma_0/s_axi_lite_aresetn'],
+                                                 'direction': 'I',
+                                                 'protocol': 'reset',
+                                                 'width': 1}}}}
+2025-05-13 17:42:17,973 INFO: ip_3_axi_cdma randomized to:
+{'axi_cdma_0': {'configuration': {'C_ADDR_WIDTH': {'value': 48},
+                                  'C_INCLUDE_SF': {'value': 0},
+                                  'C_INCLUDE_SG': {'value': 0},
+                                  'C_M_AXI_DATA_WIDTH': {'value': 64},
+                                  'C_M_AXI_MAX_BURST_LEN': {'value': 16},
+                                  'C_USE_DATAMOVER_LITE': {'value': 1}},
+                'definition': 'xilinx.com:ip:axi_cdma:4.1',
+                'ports': {'M_AXI': {'connections': ['axi_cdma_0/M_AXI'],
+                                    'direction': 'Master',
+                                    'protocol': 'xilinx.com:interface:aximm_rtl:1.0'},
+                          'S_AXI_LITE': {'connections': ['axi_cdma_0/S_AXI_LITE'],
+                                         'direction': 'Slave',
+                                         'protocol': 'xilinx.com:interface:aximm_rtl:1.0'},
+                          'cdma_introut': {'connections': ['axi_cdma_0/cdma_introut'],
+                                           'direction': 'O',
+                                           'protocol': 'irq',
+                                           'width': 1},
+                          'm_axi_aclk': {'connections': ['axi_cdma_0/m_axi_aclk'],
+                                         'direction': 'I',
+                                         'protocol': 'clk',
+                                         'width': 1},
+                          's_axi_lite_aclk': {'connections': ['axi_cdma_0/s_axi_lite_aclk'],
+                                              'direction': 'I',
+                                              'protocol': 'clk',
+                                              'width': 1},
+                          's_axi_lite_aresetn': {'connections': ['axi_cdma_0/s_axi_lite_aresetn'],
+                                                 'direction': 'I',
+                                                 'protocol': 'reset',
+                                                 'width': 1}}}}
+2025-05-13 17:42:17,979 INFO: ip_4_accumulator randomized to:
+{'accumulator_0': {'configuration': {'AINIT_Value': {'value': 3450873173395281893717377931138512726225554486085193277581262111899647},
+                                     'Accum_Mode': {'value': 'Add_Subtract'},
+                                     'Bypass': {'value': 1},
+                                     'Bypass_Sense': {'value': 'Active_Low'},
+                                     'CE': {'value': 0},
+                                     'C_In': {'value': 0},
+                                     'Implementation': {'value': 'Fabric'},
+                                     'Input_Type': {'value': 'Signed'},
+                                     'Input_Width': {'value': 192},
+                                     'Latency_Configuration': {'value': 'Automatic'},
+                                     'Output_Width': {'value': 231},
+                                     'SCLR': {'value': 0},
+                                     'SINIT': {'value': 0},
+                                     'SSET': {'value': 0}},
+                   'definition': 'xilinx.com:ip:c_accum:12.0',
+                   'ports': {'ADD': {'connections': ['accumulator_0/ADD'],
+                                     'direction': 'I',
+                                     'protocol': 'control',
+                                     'width': 1},
+                             'B': {'connections': ['accumulator_0/B'],
+                                   'direction': 'I',
+                                   'protocol': 'data',
+                                   'width': 192},
+                             'Bypass': {'connections': ['accumulator_0/Bypass'],
+                                        'direction': 'I',
+                                        'protocol': 'control',
+                                        'width': 1},
+                             'Q': {'connections': ['accumulator_0/Q'],
+                                   'direction': 'O',
+                                   'protocol': 'data',
+                                   'width': 231},
+                             'clk': {'connections': ['accumulator_0/CLK'],
+                                     'direction': 'I',
+                                     'protocol': 'clk',
+                                     'width': 1}}}}
+2025-05-13 17:42:17,984 INFO: ip_5_dft randomized to:
+{'dft_0': {'configuration': {'Clock_Enable': {'value': 0},
+                             'Data_Width': {'value': 13},
+                             'Speed_Optimization': {'value': 'Area'},
+                             'Support_Size_5G': {'value': 1},
+                             'Synchronous_Clear': {'value': 1}},
+           'definition': 'xilinx.com:ip:dft:4.2',
+           'ports': {'BLK_EXP': {'connections': ['dft_0/BLK_EXP'],
+                                 'direction': 'O',
+                                 'protocol': 'data',
+                                 'width': 4},
+                     'CLK': {'connections': ['dft_0/CLK'],
+                             'direction': 'I',
+                             'protocol': 'clk',
+                             'width': 1},
+                     'DATA_VALID': {'connections': ['dft_0/DATA_VALID'],
+                                    'direction': 'O',
+                                    'protocol': 'data',
+                                    'width': 1},
+                     'FD_IN': {'connections': ['dft_0/FD_IN'],
+                               'direction': 'I',
+                               'protocol': 'control',
+                               'width': 1},
+                     'FD_OUT': {'connections': ['dft_0/FD_OUT'],
+                                'direction': 'O',
+                                'protocol': 'data',
+                                'width': 1},
+                     'FWD_INV': {'connections': ['dft_0/FWD_INV'],
+                                 'direction': 'I',
+                                 'protocol': 'control',
+                                 'width': 1},
+                     'RFFD': {'connections': ['dft_0/RFFD'],
+                              'direction': 'O',
+                              'protocol': 'data',
+                              'width': 1},
+                     'SCLR': {'connections': ['dft_0/SCLR'],
+                              'direction': 'I',
+                              'protocol': 'reset',
+                              'width': 1},
+                     'SIZE': {'connections': ['dft_0/SIZE'],
+                              'direction': 'I',
+                              'protocol': 'data',
+                              'width': 6},
+                     'XK_IM': {'connections': ['dft_0/XK_IM'],
+                               'direction': 'O',
+                               'protocol': 'data',
+                               'width': 13},
+                     'XK_RE': {'connections': ['dft_0/XK_RE'],
+                               'direction': 'O',
+                               'protocol': 'data',
+                               'width': 13},
+                     'XN_IM': {'connections': ['dft_0/XN_IM'],
+                               'direction': 'I',
+                               'protocol': 'data',
+                               'width': 13},
+                     'XN_RE': {'connections': ['dft_0/XN_RE'],
+                               'direction': 'I',
+                               'protocol': 'data',
+                               'width': 13}}}}
+2025-05-13 17:42:17,986 INFO: ip_6_emc randomized to:
+{'emc_0': {'configuration': {'C_NUM_BANKS_MEM': {'value': 1},
+                             'C_S_AXI_MEM_DATA_WIDTH': {'value': 32}},
+           'definition': 'xilinx.com:ip:axi_emc:3.0',
+           'ports': {'AXI': {'connections': ['emc_0/S_AXI_MEM'],
+                             'direction': 'Slave',
+                             'protocol': 'xilinx.com:interface:aximm_rtl:1.0'},
+                     'EMC_INTF': {'connections': ['emc_0/EMC_INTF'],
+                                  'direction': 'Master',
+                                  'protocol': 'xilinx.com:interface:emc_rtl:1.0'},
+                     'clk': {'connections': ['emc_0/s_axi_aclk'],
+                             'direction': 'I',
+                             'protocol': 'clk',
+                             'width': 1},
+                     'rdclk': {'connections': ['emc_0/rdclk'],
+                               'direction': 'I',
+                               'protocol': 'clk',
+                               'width': 1},
+                     'rst': {'connections': ['emc_0/s_axi_aresetn'],
+                             'direction': 'I',
+                             'protocol': 'reset',
+                             'width': 1}}}}
+2025-05-13 17:42:17,992 INFO: ip_7_accumulator randomized to:
+{'accumulator_0': {'configuration': {'Accum_Mode': {'value': 'Subtract'},
+                                     'Bypass': {'value': 1},
+                                     'Bypass_Sense': {'value': 'Active_High'},
+                                     'CE': {'value': 0},
+                                     'C_In': {'value': 0},
+                                     'Implementation': {'value': 'DSP48'},
+                                     'Input_Type': {'value': 'Unsigned'},
+                                     'Input_Width': {'value': 26},
+                                     'Latency_Configuration': {'value': 'Automatic'},
+                                     'Output_Width': {'value': 48},
+                                     'SCLR': {'value': 1},
+                                     'SINIT': {'value': 0},
+                                     'SSET': {'value': 0}},
+                   'definition': 'xilinx.com:ip:c_accum:12.0',
+                   'ports': {'B': {'connections': ['accumulator_0/B'],
+                                   'direction': 'I',
+                                   'protocol': 'data',
+                                   'width': 26},
+                             'Bypass': {'connections': ['accumulator_0/Bypass'],
+                                        'direction': 'I',
+                                        'protocol': 'control',
+                                        'width': 1},
+                             'Q': {'connections': ['accumulator_0/Q'],
+                                   'direction': 'O',
+                                   'protocol': 'data',
+                                   'width': 48},
+                             'SCLR': {'connections': ['accumulator_0/SCLR'],
+                                      'direction': 'I',
+                                      'protocol': 'control',
+                                      'width': 1},
+                             'clk': {'connections': ['accumulator_0/CLK'],
+                                     'direction': 'I',
+                                     'protocol': 'clk',
+                                     'width': 1}}}}
+2025-05-13 17:42:17,996 INFO: ip_8_axi_ethernet_lite randomized to:
+{'axi_ethernetlite_0': {'configuration': {'C_DUPLEX': {'value': 1},
+                                          'C_INCLUDE_GLOBAL_BUFFERS': {'value': 0},
+                                          'C_INCLUDE_INTERNAL_LOOPBACK': {'value': 0},
+                                          'C_INCLUDE_MDIO': {'value': 1},
+                                          'C_RX_PING_PONG': {'value': 0},
+                                          'C_S_AXI_PROTOCOL': {'value': 'AXI4LITE'},
+                                          'C_TX_PING_PONG': {'value': 1}},
+                        'definition': 'xilinx.com:ip:axi_ethernetlite:3.0',
+                        'ports': {'AXI': {'connections': ['axi_ethernetlite_0/S_AXI'],
+                                          'direction': 'Slave',
+                                          'protocol': 'xilinx.com:interface:aximm_rtl:1.0'},
+                                  'MDIO': {'connections': ['axi_ethernetlite_0/MDIO'],
+                                           'direction': 'Master',
+                                           'protocol': 'xilinx.com:interface:mdio_rtl:1.0'},
+                                  'MII': {'clk_pins': [{'direction': 'I',
+                                                        'name': 'tx_clk'},
+                                                       {'direction': 'I',
+                                                        'name': 'rx_clk'}],
+                                          'connections': ['axi_ethernetlite_0/MII'],
+                                          'direction': 'Master',
+                                          'protocol': 'xilinx.com:interface:mii_rtl:1.0'},
+                                  'clk': {'connections': ['axi_ethernetlite_0/s_axi_aclk'],
+                                          'direction': 'I',
+                                          'protocol': 'clk',
+                                          'width': 1},
+                                  'irq': {'connections': ['axi_ethernetlite_0/ip2intc_irpt'],
+                                          'direction': 'O',
+                                          'protocol': 'irq',
+                                          'width': 1},
+                                  'reset': {'connections': ['axi_ethernetlite_0/s_axi_aresetn'],
+                                            'direction': 'I',
+                                            'protocol': 'reset',
+                                            'width': 1}}}}
+2025-05-13 17:42:17,998 INFO: ip_9_uartlite randomized to:
+{'uart_0': {'configuration': {'C_BAUDRATE': {'value': 115200},
+                              'C_DATA_BITS': {'value': 7},
+                              'PARITY': {'value': 'No_Parity'}},
+            'definition': 'xilinx.com:ip:axi_uartlite:2.0',
+            'ports': {'AXI': {'connections': ['uart_0/S_AXI'],
+                              'direction': 'Slave',
+                              'protocol': 'xilinx.com:interface:aximm_rtl:1.0'},
+                      'UART': {'connections': ['uart_0/UART'],
+                               'direction': 'Master',
+                               'protocol': 'xilinx.com:interface:uart_rtl:1.0'},
+                      'clk': {'connections': ['uart_0/s_axi_aclk'],
+                              'direction': 'I',
+                              'protocol': 'clk',
+                              'width': 1},
+                      'irq': {'connections': ['uart_0/interrupt'],
+                              'direction': 'O',
+                              'protocol': 'irq',
+                              'width': 1},
+                      'reset': {'connections': ['uart_0/s_axi_aresetn'],
+                                'direction': 'I',
+                                'protocol': 'reset',
+                                'width': 1}}}}
+2025-05-13 17:42:18,003 INFO: ip_10_dft randomized to:
+{'dft_0': {'configuration': {'Clock_Enable': {'value': 0},
+                             'Data_Width': {'value': 12},
+                             'Speed_Optimization': {'value': 'Speed'},
+                             'Support_Size_1536': {'value': 0},
+                             'Support_Size_5G': {'value': 0},
+                             'Synchronous_Clear': {'value': 0}},
+           'definition': 'xilinx.com:ip:dft:4.2',
+           'ports': {'BLK_EXP': {'connections': ['dft_0/BLK_EXP'],
+                                 'direction': 'O',
+                                 'protocol': 'data',
+                                 'width': 4},
+                     'CLK': {'connections': ['dft_0/CLK'],
+                             'direction': 'I',
+                             'protocol': 'clk',
+                             'width': 1},
+                     'DATA_VALID': {'connections': ['dft_0/DATA_VALID'],
+                                    'direction': 'O',
+                                    'protocol': 'data',
+                                    'width': 1},
+                     'FD_IN': {'connections': ['dft_0/FD_IN'],
+                               'direction': 'I',
+                               'protocol': 'control',
+                               'width': 1},
+                     'FD_OUT': {'connections': ['dft_0/FD_OUT'],
+                                'direction': 'O',
+                                'protocol': 'data',
+                                'width': 1},
+                     'FWD_INV': {'connections': ['dft_0/FWD_INV'],
+                                 'direction': 'I',
+                                 'protocol': 'control',
+                                 'width': 1},
+                     'RFFD': {'connections': ['dft_0/RFFD'],
+                              'direction': 'O',
+                              'protocol': 'data',
+                              'width': 1},
+                     'SIZE': {'connections': ['dft_0/SIZE'],
+                              'direction': 'I',
+                              'protocol': 'data',
+                              'width': 6},
+                     'XK_IM': {'connections': ['dft_0/XK_IM'],
+                               'direction': 'O',
+                               'protocol': 'data',
+                               'width': 12},
+                     'XK_RE': {'connections': ['dft_0/XK_RE'],
+                               'direction': 'O',
+                               'protocol': 'data',
+                               'width': 12},
+                     'XN_IM': {'connections': ['dft_0/XN_IM'],
+                               'direction': 'I',
+                               'protocol': 'data',
+                               'width': 12},
+                     'XN_RE': {'connections': ['dft_0/XN_RE'],
+                               'direction': 'I',
+                               'protocol': 'data',
+                               'width': 12}}}}
+2025-05-13 17:42:18,008 INFO: ip_11_axi_hwicap randomized to:
+{'axi_hwicap_0': {'configuration': {'C_ICAP_DWIDTH': {'value': 8},
+                                    'C_ICAP_EXTERNAL': {'value': 1},
+                                    'C_INCLUDE_STARTUP': {'value': 1},
+                                    'C_MODE': {'value': 1},
+                                    'C_NOREAD': {'value': 1},
+                                    'C_OPERATION': {'value': 1},
+                                    'C_SHARED_STARTUP': {'value': 0}},
+                  'definition': 'xilinx.com:ip:axi_hwicap:3.0',
+                  'ports': {'ICAP': {'connections': ['axi_hwicap_0/ICAP'],
+                                     'direction': 'Master',
+                                     'protocol': 'xilinx.com:interface:icap_rtl:1.0'},
+                            'ICAP_ARBITER': {'connections': ['axi_hwicap_0/ICAP_ARBITER'],
+                                             'direction': 'Master',
+                                             'protocol': 'xilinx.com:interface:arb_rtl:1.0'},
+                            'S_AXI_LITE': {'connections': ['axi_hwicap_0/S_AXI_LITE'],
+                                           'direction': 'Slave',
+                                           'protocol': 'xilinx.com:interface:aximm_rtl:1.0'},
+                            'eos_in': {'connections': ['axi_hwicap_0/eos_in'],
+                                       'direction': 'I',
+                                       'protocol': 'data',
+                                       'width': 1},
+                            'icap_clk': {'connections': ['axi_hwicap_0/icap_clk'],
+                                         'direction': 'I',
+                                         'protocol': 'clk',
+                                         'width': 1},
+                            'ip2intc_irpt': {'connections': ['axi_hwicap_0/ip2intc_irpt'],
+                                             'direction': 'O',
+                                             'protocol': 'irq',
+                                             'width': 1},
+                            's_axi_aclk': {'connections': ['axi_hwicap_0/s_axi_aclk'],
+                                           'direction': 'I',
+                                           'protocol': 'clk',
+                                           'width': 1},
+                            's_axi_aresetn': {'connections': ['axi_hwicap_0/s_axi_aresetn'],
+                                              'direction': 'I',
+                                              'protocol': 'reset',
+                                              'width': 1}}}}
+2025-05-13 17:42:18,009 INFO: ip_12_emc randomized to:
+{'emc_0': {'configuration': {'C_NUM_BANKS_MEM': {'value': 1},
+                             'C_S_AXI_MEM_DATA_WIDTH': {'value': 32}},
+           'definition': 'xilinx.com:ip:axi_emc:3.0',
+           'ports': {'AXI': {'connections': ['emc_0/S_AXI_MEM'],
+                             'direction': 'Slave',
+                             'protocol': 'xilinx.com:interface:aximm_rtl:1.0'},
+                     'EMC_INTF': {'connections': ['emc_0/EMC_INTF'],
+                                  'direction': 'Master',
+                                  'protocol': 'xilinx.com:interface:emc_rtl:1.0'},
+                     'clk': {'connections': ['emc_0/s_axi_aclk'],
+                             'direction': 'I',
+                             'protocol': 'clk',
+                             'width': 1},
+                     'rdclk': {'connections': ['emc_0/rdclk'],
+                               'direction': 'I',
+                               'protocol': 'clk',
+                               'width': 1},
+                     'rst': {'connections': ['emc_0/s_axi_aresetn'],
+                             'direction': 'I',
+                             'protocol': 'reset',
+                             'width': 1}}}}
+2025-05-13 17:42:18,013 INFO: ip_13_axi_cdma randomized to:
+{'axi_cdma_0': {'configuration': {'C_ADDR_WIDTH': {'value': 57},
+                                  'C_INCLUDE_SF': {'value': 1},
+                                  'C_INCLUDE_SG': {'value': 0},
+                                  'C_M_AXI_DATA_WIDTH': {'value': 64},
+                                  'C_M_AXI_MAX_BURST_LEN': {'value': 64},
+                                  'C_USE_DATAMOVER_LITE': {'value': 1}},
+                'definition': 'xilinx.com:ip:axi_cdma:4.1',
+                'ports': {'M_AXI': {'connections': ['axi_cdma_0/M_AXI'],
+                                    'direction': 'Master',
+                                    'protocol': 'xilinx.com:interface:aximm_rtl:1.0'},
+                          'S_AXI_LITE': {'connections': ['axi_cdma_0/S_AXI_LITE'],
+                                         'direction': 'Slave',
+                                         'protocol': 'xilinx.com:interface:aximm_rtl:1.0'},
+                          'cdma_introut': {'connections': ['axi_cdma_0/cdma_introut'],
+                                           'direction': 'O',
+                                           'protocol': 'irq',
+                                           'width': 1},
+                          'm_axi_aclk': {'connections': ['axi_cdma_0/m_axi_aclk'],
+                                         'direction': 'I',
+                                         'protocol': 'clk',
+                                         'width': 1},
+                          's_axi_lite_aclk': {'connections': ['axi_cdma_0/s_axi_lite_aclk'],
+                                              'direction': 'I',
+                                              'protocol': 'clk',
+                                              'width': 1},
+                          's_axi_lite_aresetn': {'connections': ['axi_cdma_0/s_axi_lite_aresetn'],
+                                                 'direction': 'I',
+                                                 'protocol': 'reset',
+                                                 'width': 1}}}}
+2025-05-13 17:42:18,018 INFO: ip_14_axi_timer randomized to:
+{'axi_timer_0': {'configuration': {'COUNT_WIDTH': {'value': 16},
+                                   'GEN0_ASSERT': {'value': 'Active_High'},
+                                   'TRIG0_ASSERT': {'value': 'Active_High'},
+                                   'enable_timer2': {'value': 0},
+                                   'mode_64bit': {'value': 0}},
+                 'definition': 'xilinx.com:ip:axi_timer:2.0',
+                 'ports': {'S_AXI': {'connections': ['axi_timer_0/S_AXI'],
+                                     'direction': 'Slave',
+                                     'protocol': 'xilinx.com:interface:aximm_rtl:1.0'},
+                           'capturetrig0': {'connections': ['axi_timer_0/capturetrig0'],
+                                            'direction': 'I',
+                                            'protocol': 'control',
+                                            'width': 1},
+                           'capturetrig1': {'connections': ['axi_timer_0/capturetrig1'],
+                                            'direction': 'I',
+                                            'protocol': 'control',
+                                            'width': 1},
+                           'freeze': {'connections': ['axi_timer_0/freeze'],
+                                      'direction': 'I',
+                                      'protocol': 'control',
+                                      'width': 1},
+                           'generateout0': {'connections': ['axi_timer_0/generateout0'],
+                                            'direction': 'O',
+                                            'protocol': 'data',
+                                            'width': 1},
+                           'generateout1': {'connections': ['axi_timer_0/generateout1'],
+                                            'direction': 'O',
+                                            'protocol': 'data',
+                                            'width': 1},
+                           'interrupt': {'connections': ['axi_timer_0/interrupt'],
+                                         'direction': 'O',
+                                         'protocol': 'irq',
+                                         'width': 1},
+                           'pwm0': {'connections': ['axi_timer_0/pwm0'],
+                                    'direction': 'O',
+                                    'protocol': 'data',
+                                    'width': 1},
+                           's_axi_aclk': {'connections': ['axi_timer_0/s_axi_aclk'],
+                                          'direction': 'I',
+                                          'protocol': 'clk',
+                                          'width': 1},
+                           's_axi_aresetn': {'connections': ['axi_timer_0/s_axi_aresetn'],
+                                             'direction': 'I',
+                                             'protocol': 'reset',
+                                             'width': 1}}}}
+2025-05-13 17:42:18,024 INFO: ip_15_axi_quad_spi randomized to:
+{'axi_quad_spi_0': {'configuration': {'C_FIFO_DEPTH': {'value': 16},
+                                      'C_SHARED_STARTUP': {'value': 1},
+                                      'C_SPI_MEMORY': {'value': 1},
+                                      'C_SPI_MODE': {'value': 1},
+                                      'C_TYPE_OF_AXI4_INTERFACE': {'value': 1},
+                                      'C_USE_STARTUP': {'value': 1},
+                                      'C_XIP_MODE': {'value': 0},
+                                      'C_XIP_PERF_MODE': {'value': 0},
+                                      'FIFO_INCLUDED': {'value': 1},
+                                      'Master_mode': {'value': 1}},
+                    'definition': 'xilinx.com:ip:axi_quad_spi:3.2',
+                    'ports': {'AXI_FULL': {'connections': ['axi_quad_spi_0/AXI_FULL'],
+                                           'direction': 'Slave',
+                                           'protocol': 'xilinx.com:interface:aximm_rtl:1.0'},
+                              'IIC': {'connections': ['axi_quad_spi_0/SPI_0'],
+                                      'direction': 'Master',
+                                      'protocol': 'xilinx.com:interface:spi_rtl:1.0'},
+                              'STARTUP_IO_S': {'connections': ['axi_quad_spi_0/STARTUP_IO_S'],
+                                               'direction': 'Master',
+                                               'protocol': 'xilinx.com:interface:startup_rtl:1.0'},
+                              'clk4': {'connections': ['axi_quad_spi_0/s_axi4_aclk'],
+                                       'direction': 'I',
+                                       'protocol': 'clk',
+                                       'width': 1},
+                              'ext_spi_clk': {'connections': ['axi_quad_spi_0/ext_spi_clk'],
+                                              'direction': 'I',
+                                              'protocol': 'clk',
+                                              'width': 1},
+                              'irq': {'connections': ['axi_quad_spi_0/ip2intc_irpt'],
+                                      'direction': 'O',
+                                      'protocol': 'irq',
+                                      'width': 1},
+                              'reset4': {'connections': ['axi_quad_spi_0/s_axi4_aresetn'],
+                                         'direction': 'I',
+                                         'protocol': 'reset',
+                                         'width': 1}}}}
+2025-05-13 17:42:18,026 INFO: ip_16_emc randomized to:
+{'emc_0': {'configuration': {'C_NUM_BANKS_MEM': {'value': 3},
+                             'C_S_AXI_MEM_DATA_WIDTH': {'value': 32}},
+           'definition': 'xilinx.com:ip:axi_emc:3.0',
+           'ports': {'AXI': {'connections': ['emc_0/S_AXI_MEM'],
+                             'direction': 'Slave',
+                             'protocol': 'xilinx.com:interface:aximm_rtl:1.0'},
+                     'EMC_INTF': {'connections': ['emc_0/EMC_INTF'],
+                                  'direction': 'Master',
+                                  'protocol': 'xilinx.com:interface:emc_rtl:1.0'},
+                     'clk': {'connections': ['emc_0/s_axi_aclk'],
+                             'direction': 'I',
+                             'protocol': 'clk',
+                             'width': 1},
+                     'rdclk': {'connections': ['emc_0/rdclk'],
+                               'direction': 'I',
+                               'protocol': 'clk',
+                               'width': 1},
+                     'rst': {'connections': ['emc_0/s_axi_aresetn'],
+                             'direction': 'I',
+                             'protocol': 'reset',
+                             'width': 1}}}}
+2025-05-13 17:42:18,030 INFO: ip_17_axi_ethernet_lite randomized to:
+{'axi_ethernetlite_0': {'configuration': {'C_DUPLEX': {'value': 1},
+                                          'C_INCLUDE_GLOBAL_BUFFERS': {'value': 0},
+                                          'C_INCLUDE_INTERNAL_LOOPBACK': {'value': 1},
+                                          'C_INCLUDE_MDIO': {'value': 0},
+                                          'C_RX_PING_PONG': {'value': 1},
+                                          'C_S_AXI_PROTOCOL': {'value': 'AXI4'},
+                                          'C_TX_PING_PONG': {'value': 0}},
+                        'definition': 'xilinx.com:ip:axi_ethernetlite:3.0',
+                        'ports': {'AXI': {'connections': ['axi_ethernetlite_0/S_AXI'],
+                                          'direction': 'Slave',
+                                          'protocol': 'xilinx.com:interface:aximm_rtl:1.0'},
+                                  'MII': {'clk_pins': [{'direction': 'I',
+                                                        'name': 'tx_clk'},
+                                                       {'direction': 'I',
+                                                        'name': 'rx_clk'}],
+                                          'connections': ['axi_ethernetlite_0/MII'],
+                                          'direction': 'Master',
+                                          'protocol': 'xilinx.com:interface:mii_rtl:1.0'},
+                                  'clk': {'connections': ['axi_ethernetlite_0/s_axi_aclk'],
+                                          'direction': 'I',
+                                          'protocol': 'clk',
+                                          'width': 1},
+                                  'irq': {'connections': ['axi_ethernetlite_0/ip2intc_irpt'],
+                                          'direction': 'O',
+                                          'protocol': 'irq',
+                                          'width': 1},
+                                  'reset': {'connections': ['axi_ethernetlite_0/s_axi_aresetn'],
+                                            'direction': 'I',
+                                            'protocol': 'reset',
+                                            'width': 1}}}}
+2025-05-13 17:42:18,030 INFO: ########## Resets ##########
+2025-05-13 17:42:18,030 INFO: Creating external reset port: reset
+2025-05-13 17:42:18,030 INFO: Connecting [IpPortRegular(ip_0_axi_timer/s_axi_aresetn, I, 1, reset), IpPortRegular(ip_2_axi_cdma/s_axi_lite_aresetn, I, 1, reset), IpPortRegular(ip_3_axi_cdma/s_axi_lite_aresetn, I, 1, reset), IpPortRegular(ip_5_dft/SCLR, I, 1, reset), IpPortRegular(ip_6_emc/rst, I, 1, reset), IpPortRegular(ip_8_axi_ethernet_lite/reset, I, 1, reset), IpPortRegular(ip_9_uartlite/reset, I, 1, reset), IpPortRegular(ip_11_axi_hwicap/s_axi_aresetn, I, 1, reset), IpPortRegular(ip_12_emc/rst, I, 1, reset), IpPortRegular(ip_13_axi_cdma/s_axi_lite_aresetn, I, 1, reset), IpPortRegular(ip_14_axi_timer/s_axi_aresetn, I, 1, reset), IpPortRegular(ip_15_axi_quad_spi/reset4, I, 1, reset), IpPortRegular(ip_16_emc/rst, I, 1, reset), IpPortRegular(ip_17_axi_ethernet_lite/reset, I, 1, reset)] to reset
+2025-05-13 17:42:18,030 INFO: ########## Clocks ##########
+2025-05-13 17:42:18,030 INFO: Creating external clock port: clock
+2025-05-13 17:42:18,030 INFO: Connecting [IpPortRegular(ip_0_axi_timer/s_axi_aclk, I, 1, clk), IpPortRegular(ip_2_axi_cdma/m_axi_aclk, I, 1, clk), IpPortRegular(ip_2_axi_cdma/s_axi_lite_aclk, I, 1, clk), IpPortRegular(ip_3_axi_cdma/m_axi_aclk, I, 1, clk), IpPortRegular(ip_3_axi_cdma/s_axi_lite_aclk, I, 1, clk), IpPortRegular(ip_4_accumulator/clk, I, 1, clk), IpPortRegular(ip_5_dft/CLK, I, 1, clk), IpPortRegular(ip_6_emc/clk, I, 1, clk), IpPortRegular(ip_6_emc/rdclk, I, 1, clk), IpPortRegular(ip_7_accumulator/clk, I, 1, clk), IpPortRegular(ip_8_axi_ethernet_lite/clk, I, 1, clk), IpPortRegular(ip_9_uartlite/clk, I, 1, clk), IpPortRegular(ip_10_dft/CLK, I, 1, clk), IpPortRegular(ip_11_axi_hwicap/icap_clk, I, 1, clk), IpPortRegular(ip_11_axi_hwicap/s_axi_aclk, I, 1, clk), IpPortRegular(ip_12_emc/clk, I, 1, clk), IpPortRegular(ip_12_emc/rdclk, I, 1, clk), IpPortRegular(ip_13_axi_cdma/m_axi_aclk, I, 1, clk), IpPortRegular(ip_13_axi_cdma/s_axi_lite_aclk, I, 1, clk), IpPortRegular(ip_14_axi_timer/s_axi_aclk, I, 1, clk), IpPortRegular(ip_15_axi_quad_spi/ext_spi_clk, I, 1, clk), IpPortRegular(ip_15_axi_quad_spi/clk4, I, 1, clk), IpPortRegular(ip_16_emc/clk, I, 1, clk), IpPortRegular(ip_16_emc/rdclk, I, 1, clk), IpPortRegular(ip_17_axi_ethernet_lite/clk, I, 1, clk)] to clock
+2025-05-13 17:42:18,030 INFO: ########## Interrupts ##########
+2025-05-13 17:42:18,030 INFO: Interrupt outputs: 10
+2025-05-13 17:42:18,030 INFO: Interrupt inputs: 0
+2025-05-13 17:42:18,030 INFO: ########## AXI ##########
+2025-05-13 17:42:18,030 INFO: ########## Connecting data ports ##########
+2025-05-13 17:42:18,030 INFO: Creating primary output port: data_O, width: 32
+2025-05-13 17:42:18,030 INFO: Adding reducer from 71 to 32
+2025-05-13 17:42:18,030 INFO: Num input pins: 352
+2025-05-13 17:42:18,030 INFO:   ip_4_accumulator/B 192
+2025-05-13 17:42:18,031 INFO:   ip_5_dft/XN_RE 13
+2025-05-13 17:42:18,031 INFO:   ip_5_dft/XN_IM 13
+2025-05-13 17:42:18,031 INFO:   ip_5_dft/SIZE 6
+2025-05-13 17:42:18,031 INFO:   ip_7_accumulator/B 26
+2025-05-13 17:42:18,031 INFO:   ip_10_dft/XN_RE 12
+2025-05-13 17:42:18,031 INFO:   ip_10_dft/XN_IM 12
+2025-05-13 17:42:18,031 INFO:   ip_10_dft/SIZE 6
+2025-05-13 17:42:18,031 INFO:   ip_11_axi_hwicap/eos_in 1
+2025-05-13 17:42:18,031 INFO:   ip_21_reduce/in0 71
+2025-05-13 17:42:18,031 INFO: Num output pins: 352
+2025-05-13 17:42:18,031 INFO:   ip_0_axi_timer/generateout0 1
+2025-05-13 17:42:18,031 INFO:   ip_0_axi_timer/generateout1 1
+2025-05-13 17:42:18,031 INFO:   ip_0_axi_timer/pwm0 1
+2025-05-13 17:42:18,031 INFO:   ip_1_xadc_wiz/eoc_out 1
+2025-05-13 17:42:18,031 INFO:   ip_1_xadc_wiz/eos_out 1
+2025-05-13 17:42:18,031 INFO:   ip_1_xadc_wiz/busy_out 1
+2025-05-13 17:42:18,031 INFO:   ip_4_accumulator/Q 231
+2025-05-13 17:42:18,031 INFO:   ip_5_dft/RFFD 1
+2025-05-13 17:42:18,031 INFO:   ip_5_dft/XK_RE 13
+2025-05-13 17:42:18,031 INFO:   ip_5_dft/XK_IM 13
+2025-05-13 17:42:18,031 INFO:   ip_5_dft/BLK_EXP 4
+2025-05-13 17:42:18,031 INFO:   ip_5_dft/FD_OUT 1
+2025-05-13 17:42:18,031 INFO:   ip_5_dft/DATA_VALID 1
+2025-05-13 17:42:18,031 INFO:   ip_7_accumulator/Q 48
+2025-05-13 17:42:18,031 INFO:   ip_10_dft/RFFD 1
+2025-05-13 17:42:18,031 INFO:   ip_10_dft/XK_RE 12
+2025-05-13 17:42:18,031 INFO:   ip_10_dft/XK_IM 12
+2025-05-13 17:42:18,031 INFO:   ip_10_dft/BLK_EXP 4
+2025-05-13 17:42:18,031 INFO:   ip_10_dft/FD_OUT 1
+2025-05-13 17:42:18,031 INFO:   ip_10_dft/DATA_VALID 1
+2025-05-13 17:42:18,031 INFO:   ip_14_axi_timer/generateout0 1
+2025-05-13 17:42:18,031 INFO:   ip_14_axi_timer/generateout1 1
+2025-05-13 17:42:18,031 INFO:   ip_14_axi_timer/pwm0 1
+2025-05-13 17:42:18,031 INFO: Will randomly connect 23 output ports to 10 input ports
+2025-05-13 17:42:18,031 INFO: Connecting drivers of port ip_10_dft/XN_RE [11:0]
+2025-05-13 17:42:18,031 INFO:   [11:11] <-- ip_0_axi_timer/generateout0 [0:0]
+2025-05-13 17:42:18,031 INFO:   [10:10] <-- ip_0_axi_timer/generateout1 [0:0]
+2025-05-13 17:42:18,031 INFO:   [9:9] <-- ip_0_axi_timer/pwm0 [0:0]
+2025-05-13 17:42:18,031 INFO:   [8:8] <-- ip_1_xadc_wiz/eoc_out [0:0]
+2025-05-13 17:42:18,031 INFO:   [7:7] <-- ip_1_xadc_wiz/eos_out [0:0]
+2025-05-13 17:42:18,031 INFO:   [6:6] <-- ip_1_xadc_wiz/busy_out [0:0]
+2025-05-13 17:42:18,031 INFO:   [5:0] <-- ip_4_accumulator/Q [5:0]
+2025-05-13 17:42:18,031 INFO: Connecting drivers of port ip_21_reduce/in0 [70:0]
+2025-05-13 17:42:18,031 INFO:   [70:0] <-- ip_4_accumulator/Q [76:6]
+2025-05-13 17:42:18,031 INFO: Connecting drivers of port ip_10_dft/XN_IM [11:0]
+2025-05-13 17:42:18,031 INFO:   [11:0] <-- ip_4_accumulator/Q [88:77]
+2025-05-13 17:42:18,031 INFO: Connecting drivers of port ip_5_dft/SIZE [5:0]
+2025-05-13 17:42:18,031 INFO:   [5:0] <-- ip_4_accumulator/Q [94:89]
+2025-05-13 17:42:18,031 INFO: Connecting drivers of port ip_5_dft/XN_RE [12:0]
+2025-05-13 17:42:18,031 INFO:   [12:0] <-- ip_4_accumulator/Q [107:95]
+2025-05-13 17:42:18,031 INFO: Connecting drivers of port ip_7_accumulator/B [25:0]
+2025-05-13 17:42:18,031 INFO:   [25:0] <-- ip_4_accumulator/Q [133:108]
+2025-05-13 17:42:18,031 INFO: Connecting drivers of port ip_5_dft/XN_IM [12:0]
+2025-05-13 17:42:18,031 INFO:   [12:0] <-- ip_4_accumulator/Q [146:134]
+2025-05-13 17:42:18,031 INFO: Connecting drivers of port ip_4_accumulator/B [191:0]
+2025-05-13 17:42:18,031 INFO:   [191:108] <-- ip_4_accumulator/Q [230:147]
+2025-05-13 17:42:18,031 INFO:   [107:107] <-- ip_5_dft/RFFD [0:0]
+2025-05-13 17:42:18,031 INFO:   [106:94] <-- ip_5_dft/XK_RE [12:0]
+2025-05-13 17:42:18,032 INFO:   [93:81] <-- ip_5_dft/XK_IM [12:0]
+2025-05-13 17:42:18,032 INFO:   [80:77] <-- ip_5_dft/BLK_EXP [3:0]
+2025-05-13 17:42:18,032 INFO:   [76:76] <-- ip_5_dft/FD_OUT [0:0]
+2025-05-13 17:42:18,032 INFO:   [75:75] <-- ip_5_dft/DATA_VALID [0:0]
+2025-05-13 17:42:18,032 INFO:   [74:27] <-- ip_7_accumulator/Q [47:0]
+2025-05-13 17:42:18,032 INFO:   [26:26] <-- ip_10_dft/RFFD [0:0]
+2025-05-13 17:42:18,032 INFO:   [25:14] <-- ip_10_dft/XK_RE [11:0]
+2025-05-13 17:42:18,032 INFO:   [13:2] <-- ip_10_dft/XK_IM [11:0]
+2025-05-13 17:42:18,032 INFO:   [1:0] <-- ip_10_dft/BLK_EXP [1:0]
+2025-05-13 17:42:18,032 INFO: Connecting drivers of port ip_10_dft/SIZE [5:0]
+2025-05-13 17:42:18,032 INFO:   [5:4] <-- ip_10_dft/BLK_EXP [3:2]
+2025-05-13 17:42:18,032 INFO:   [3:3] <-- ip_10_dft/FD_OUT [0:0]
+2025-05-13 17:42:18,032 INFO:   [2:2] <-- ip_10_dft/DATA_VALID [0:0]
+2025-05-13 17:42:18,032 INFO:   [1:1] <-- ip_14_axi_timer/generateout0 [0:0]
+2025-05-13 17:42:18,032 INFO:   [0:0] <-- ip_14_axi_timer/generateout1 [0:0]
+2025-05-13 17:42:18,032 INFO: Connecting drivers of port ip_11_axi_hwicap/eos_in [0:0]
+2025-05-13 17:42:18,032 INFO:   [0:0] <-- ip_14_axi_timer/pwm0 [0:0]
+2025-05-13 17:42:18,032 INFO: ########## Connecting control ports ##########
+2025-05-13 17:42:18,032 INFO: Creating primary input port: control_I, width: 1
+2025-05-13 17:42:18,032 INFO: Num input pins: 13
+2025-05-13 17:42:18,032 INFO:   ip_0_axi_timer/capturetrig0 1
+2025-05-13 17:42:18,032 INFO:   ip_0_axi_timer/freeze 1
+2025-05-13 17:42:18,032 INFO:   ip_4_accumulator/ADD 1
+2025-05-13 17:42:18,032 INFO:   ip_4_accumulator/Bypass 1
+2025-05-13 17:42:18,032 INFO:   ip_5_dft/FD_IN 1
+2025-05-13 17:42:18,032 INFO:   ip_5_dft/FWD_INV 1
+2025-05-13 17:42:18,032 INFO:   ip_7_accumulator/SCLR 1
+2025-05-13 17:42:18,032 INFO:   ip_7_accumulator/Bypass 1
+2025-05-13 17:42:18,032 INFO:   ip_10_dft/FD_IN 1
+2025-05-13 17:42:18,032 INFO:   ip_10_dft/FWD_INV 1
+2025-05-13 17:42:18,032 INFO:   ip_14_axi_timer/capturetrig0 1
+2025-05-13 17:42:18,032 INFO:   ip_14_axi_timer/capturetrig1 1
+2025-05-13 17:42:18,032 INFO:   ip_14_axi_timer/freeze 1
+2025-05-13 17:42:18,032 INFO: Num output pins: 5
+2025-05-13 17:42:18,032 INFO:   control_I 1
+2025-05-13 17:42:18,032 INFO:   ip_1_xadc_wiz/user_temp_alarm_out 1
+2025-05-13 17:42:18,032 INFO:   ip_1_xadc_wiz/vccint_alarm_out 1
+2025-05-13 17:42:18,032 INFO:   ip_1_xadc_wiz/vbram_alarm_out 1
+2025-05-13 17:42:18,032 INFO:   ip_1_xadc_wiz/alarm_out 1
+2025-05-13 17:42:18,032 INFO: Will randomly connect 5 output ports to 13 input ports
+2025-05-13 17:42:18,032 INFO: Connecting drivers of port ip_4_accumulator/ADD [0:0]
+2025-05-13 17:42:18,032 INFO:   [0:0] <-- control_I [0:0]
+2025-05-13 17:42:18,032 INFO: Connecting drivers of port ip_7_accumulator/Bypass [0:0]
+2025-05-13 17:42:18,032 INFO:   [0:0] <-- ip_1_xadc_wiz/user_temp_alarm_out [0:0]
+2025-05-13 17:42:18,032 INFO: Connecting drivers of port ip_0_axi_timer/freeze [0:0]
+2025-05-13 17:42:18,032 INFO:   [0:0] <-- ip_1_xadc_wiz/vccint_alarm_out [0:0]
+2025-05-13 17:42:18,032 INFO: Connecting drivers of port ip_7_accumulator/SCLR [0:0]
+2025-05-13 17:42:18,032 INFO:   [0:0] <-- ip_1_xadc_wiz/vbram_alarm_out [0:0]
+2025-05-13 17:42:18,032 INFO: Connecting drivers of port ip_0_axi_timer/capturetrig0 [0:0]
+2025-05-13 17:42:18,032 INFO:   [0:0] <-- ip_1_xadc_wiz/alarm_out [0:0]
+2025-05-13 17:42:18,032 INFO: Connecting drivers of port ip_14_axi_timer/capturetrig1 [0:0]
+2025-05-13 17:42:18,032 INFO:   [0:0] <-- ip_1_xadc_wiz/user_temp_alarm_out [0:0]
+2025-05-13 17:42:18,032 INFO: Connecting drivers of port ip_10_dft/FWD_INV [0:0]
+2025-05-13 17:42:18,032 INFO:   [0:0] <-- control_I [0:0]
+2025-05-13 17:42:18,032 INFO: Connecting drivers of port ip_10_dft/FD_IN [0:0]
+2025-05-13 17:42:18,032 INFO:   [0:0] <-- ip_1_xadc_wiz/user_temp_alarm_out [0:0]
+2025-05-13 17:42:18,033 INFO: Connecting drivers of port ip_5_dft/FWD_INV [0:0]
+2025-05-13 17:42:18,033 INFO:   [0:0] <-- control_I [0:0]
+2025-05-13 17:42:18,033 INFO: Connecting drivers of port ip_14_axi_timer/freeze [0:0]
+2025-05-13 17:42:18,033 INFO:   [0:0] <-- ip_1_xadc_wiz/vbram_alarm_out [0:0]
+2025-05-13 17:42:18,033 INFO: Connecting drivers of port ip_4_accumulator/Bypass [0:0]
+2025-05-13 17:42:18,033 INFO:   [0:0] <-- ip_1_xadc_wiz/user_temp_alarm_out [0:0]
+2025-05-13 17:42:18,033 INFO: Connecting drivers of port ip_14_axi_timer/capturetrig0 [0:0]
+2025-05-13 17:42:18,033 INFO:   [0:0] <-- ip_1_xadc_wiz/user_temp_alarm_out [0:0]
+2025-05-13 17:42:18,033 INFO: Connecting drivers of port ip_5_dft/FD_IN [0:0]
+2025-05-13 17:42:18,033 INFO:   [0:0] <-- ip_1_xadc_wiz/vccint_alarm_out [0:0]
+2025-05-13 17:42:18,033 INFO: ########## Resets ##########
+2025-05-13 17:42:18,033 INFO: Connecting [IpPortRegular(ip_18_clk_wiz/reset, I, 1, reset), IpPortRegular(ip_19_intc/reset, I, 1, reset), IpPortRegular(ip_20_axi/reset, I, 1, reset)] to reset
+2025-05-13 17:42:18,033 INFO: ########## Clocks ##########
+2025-05-13 17:42:18,033 INFO: Connecting [IpPortRegular(ip_19_intc/clk, I, 1, clk), IpPortRegular(ip_20_axi/clk, I, 1, clk)] to clock
+2025-05-13 17:42:18,033 INFO: 

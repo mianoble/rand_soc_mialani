@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon May 12 09:45:01 2025
+# Process ID: 1569616
+# Current directory: /home/mianoble/Downloads/gmt_tools-main/rand_soc
+# Command line: vivado -source design.tcl
+# Log file: /home/mianoble/Downloads/gmt_tools-main/rand_soc/vivado.log
+# Journal file: /home/mianoble/Downloads/gmt_tools-main/rand_soc/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source design.tcl
+couldn't read file "design.tcl": no such file or directory
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 12 09:45:46 2025...

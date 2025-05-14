@@ -1,0 +1,5 @@
+pyproject.toml
+rand_soc.egg-info/PKG-INFO
+rand_soc.egg-info/SOURCES.txt
+rand_soc.egg-info/dependency_links.txt
+rand_soc.egg-info/top_level.txt

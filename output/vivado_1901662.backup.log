@@ -1,0 +1,57 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue May 13 15:17:02 2025
+# Process ID: 1901662
+# Current directory: /home/mianoble/Downloads/gmt_tools-main/rand_soc/output
+# Command line: vivado
+# Log file: /home/mianoble/Downloads/gmt_tools-main/rand_soc/output/vivado.log
+# Journal file: /home/mianoble/Downloads/gmt_tools-main/rand_soc/output/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project practice_block_design /home/mianoble/Documents/vivado/practice_block_design -part xc7z020clg484-1
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property board_part em.avnet.com:zed:part0:1.4 [current_project]
+create_bd_design "design_1"
+Wrote  : </home/mianoble/Documents/vivado/practice_block_design/practice_block_design.srcs/sources_1/bd/design_1/design_1.bd> 
+update_compile_order -fileset sources_1
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+set_property location {338 -65} [get_bd_intf_ports FIXED_IO]
+undo
+INFO: [Common 17-17] undo 'set_property location {338 -65} [get_bd_intf_ports FIXED_IO]'
+undo
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]'
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK]
+make_wrapper -files [get_files /home/mianoble/Documents/vivado/practice_block_design/practice_block_design.srcs/sources_1/bd/design_1/design_1.bd] -top
+Wrote  : </home/mianoble/Documents/vivado/practice_block_design/practice_block_design.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/mianoble/Documents/vivado/practice_block_design/practice_block_design.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+VHDL Output written to : /home/mianoble/Documents/vivado/practice_block_design/practice_block_design.gen/sources_1/bd/design_1/synth/design_1.v
+VHDL Output written to : /home/mianoble/Documents/vivado/practice_block_design/practice_block_design.gen/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/mianoble/Documents/vivado/practice_block_design/practice_block_design.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+add_files -norecurse /home/mianoble/Documents/vivado/practice_block_design/practice_block_design.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+write_project_tcl {/home/mianoble/Documents/vivado/practice_block_design.tcl}
+INFO: [BD 5-453] Writing out BD creation steps for design_1 as a TCL proc
+INFO: [Vivado-projutils-8] Tcl script 'practice_block_design.tcl' generated in output directory '/home/mianoble/Documents/vivado'
+
+INFO: [Vivado-projutils-15] Please note that by default, the file path for the project source files were set wth respect to the 'origin_dir' variable in the
+ generated script. When this script is executed from the output directory, these source files will be referenced with respect to this 'origin_dir' path value.
+ In case this script was later moved to a different directory, the 'origin_dir' value must be set manually in the script with the path
+ relative to the new output directory to make sure that the source files are referenced correctly from the original project. You can also set the
+ 'origin_dir' automatically by setting the 'origin_dir_loc' variable in the tcl shell before sourcing this generated script. The 'origin_dir_loc'
+ variable should be set to the path relative to the new output directory. Alternatively, if you are sourcing the script from the Vivado command line,
+ then set the origin dir using '-tclargs --origin_dir <path>'. For example, 'vivado -mode tcl -source practice_block_design.tcl -tclargs --origin_dir ".."
+
+WARNING: [Vivado-projutils-10] Found source(s) that were local or imported into the project. If this project is being source controlled, then
+ please ensure that the project source(s) are also part of this source controlled data. The list of these local source(s) can be found in the generated script
+ under the header section.
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 13 15:40:34 2025...
